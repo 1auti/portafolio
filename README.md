@@ -1,6 +1,3 @@
-¡Claro! Aquí tienes un ejemplo de un archivo `README.md` para un portafolio web en GitHub. Personalízalo según las tecnologías y características específicas de tu proyecto.
-
----
 
 # Mi Portafolio Web
 
@@ -15,8 +12,8 @@ Bienvenido/a a mi portafolio web. Este sitio fue desarrollado para presentar mis
 ## 📫 Contacto
 
 Puedes encontrarme en:
-- **LinkedIn:** [Tu perfil de LinkedIn](https://www.linkedin.com/in/tu-perfil)
-- **Correo Electrónico:** [tu.email@ejemplo.com](mailto:tu.email@ejemplo.com)
+- **LinkedIn:** [Tu perfil de LinkedIn](https://www.linkedin.com/in/lautaro-cenizo/)
+- **Correo Electrónico:** [tu.email@ejemplo.com](lautacenizo@gmail.com)
 
 ---
 

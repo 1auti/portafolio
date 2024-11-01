@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header {
+    background: transparent;
+    position: fixed;
+    width: 40%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.contenedor-header ul li {
+    font-size: large; /* Tamaño normal */
+    transition: font-size 0.1s ease; /* Animación para que el cambio sea suave */
+}
+
+.contenedor-header ul li:hover {
+    font-size: 2rem; /* Tamaño más grande al pasar el ratón */
+}
+
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #ffffff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+/* Estilos para la sección de inicio */
+.inicio {
+    display: flex;
+    justify-content: flex-start; /* Mueve el contenido hacia la izquierda */
+    align-items: center; /* Centra verticalmente el contenido */
+    position: relative;
+    height: 100vh; /* Asegura que la sección ocupe toda la altura de la ventana */
+}
+
+.inicio .video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.inicio .contenido-banner {
+    margin-left: 200px;
+    margin-bottom: 400px;
+    padding: 20px;
+    background-color:transparent;
+    max-width: 350px;
+    margin: left;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.inicio .contenido-banner h1 {
+    font-size: 3rem; /* Similar a text-4xl */
+    font-weight: 700; /* Negrita (font-bold) */
+    color: #E2E8F0; /* Color similar a slate-200 */
+    letter-spacing: -0.015em; /* Espaciado ajustado como tracking-tight */
+    margin: 0; /* Sin márgenes */
+    display: inline-block; /* Cambiar a inline-block */
+    white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+}
+
+
+
+.inicio .contenido-banner h2 {
+    color: white;
+    font-size: 1.5 rem;
+    font-weight: normal;
+    white-space:nowrap; 
+
+}
+
+.inicio .contenido-banner .redes a {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin-top: 7px;
+    margin-left: -5px; /* Ajusta este valor para mover a la izquierda */
+
+    font-size: 20px;
+    transition: .3s;
+    
+}
+
+.margin-rigth{
+
+    margin-right: 180px;
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: white;
+    color: #0b7cbd;
+    font-size: large; /* Tamaño normal */
+    transition: font-size 0.1s ease; /* Animación para que el cambio sea suave */
+    font-size: 2rem; /* Tamaño más grande al pasar el ratón */
+}
+
+/* Media queries para responsive */
+@media screen and (max-width: 768px) {
+    .inicio .contenido-banner h1 {
+        font-size: 35px;
+    }
+
+    .inicio .contenido-banner {
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .inicio .contenido-banner .redes a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .inicio .contenido-banner h1 {
+        font-size: 30px;
+    }
+
+    .inicio .contenido-banner {
+        max-width: 280px;
+        padding: 10px;
+    }
+
+    .inicio .contenido-banner .redes a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        margin: 15px 3px;
+    }
+}
+
+/* Contenedor principal del scroll */
+.scroll-section {
+    /* Elimina o ajusta max-height para evitar restricción de altura */
+    height: 100vh; /* Ocupa la altura total de la ventana */
+    padding: 20px; /* Ajusta según lo necesario */
+    background-color: transparent;
+    width: 60%; /* O usa un valor fijo mayor */
+    max-width: none;
+    margin-left: 250px;
+    margin-right: auto; /* Centra el contenedor */
+    position: relative; /* Cambia sticky a relative si no necesitas efecto fijo */
+    z-index: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Scroll */
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenido dentro del scroll */
+.scroll-content {
+    padding: 15px;
+    line-height: 1.6;
+}
+
+.scroll-content p {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .scroll-section {
+        margin-left: 0;
+        width: 100%;
+        max-width: none;
+        height: 100vh;
+    }
+}
+
+
+.sobremi{
+    background-color: transparent;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+    color: white;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    color: white;
+}
+.sobremi .contenido-seccion p span{
+    color: #365bd4;
+    font-weight: bold;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #365bd4;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay{
+    width: 100%;
+}
+/* Estilos generales (mantenidos del código anterior) */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a192f;
+    color: #8892b0;
+    line-height: 1.6;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ffffff!important;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Estilos mejorados para la sección de habilidades */
+.skills {
+    padding: 4rem 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: transparent;
+    perspective: 1000px;
+    height: 300px;
+}
+
+.skill-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.skill-card:hover .skill-card-inner {
+    transform: rotateY(180deg);
+}
+
+.skill-card-front, .skill-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card-front {
+    background-color: #1d3557;
+    color: #365bd4;
+}
+
+.skill-card-back {
+    background-color: rgba(2, 12, 27, 0.9);
+    color: #ccd6f6;
+    transform: rotateY(180deg);
+    padding: 1.5rem;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.skill-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.skill-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #365bd4;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-card {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.skill-card:nth-child(1) { animation-delay: 0.1s; }
+.skill-card:nth-child(2) { animation-delay: 0.2s; }
+.skill-card:nth-child(3) { animation-delay: 0.3s; }
+.skill-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* Mejoras en la responsividad */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Estilos para el scroll (mantenidos del código anterior) */
+.scroll-section {
+    padding: 2rem;
+    background-color: rgba(10, 25, 47, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 80vh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #365bd4 #0a192f;
+}
+
+.scroll-section::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-section::-webkit-scrollbar-track {
+    background: #0a192f;
+}
+
+.scroll-section::-webkit-scrollbar-thumb {
+    background-color: #365bd4;
+    border-radius: 20px;
+    border: 3px solid #0a192f;
+}
+
+
+/* SECCION CURRICULUM */
+/* General styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a192f;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Education section styles */
+.education {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ccd6f6;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #64ffda;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    background-color: #0a192f;
+    border: 4px solid #64ffda;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item:nth-child(even)::after {
+    left: -10px;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: #112240;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-title {
+    font-size: 1.5rem;
+    color: #64ffda;
+    margin-bottom: 10px;
+}
+
+.timeline-institution {
+    font-weight: bold;
+    color: #ffffff !important;
+    margin-bottom: 5px;
+}
+
+.timeline-period {
+    font-style: italic;
+    color: #ffffff!important;
+    margin-bottom: 15px;
+}
+
+.timeline-description {
+    color: #ffffff !important;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .timeline::after {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    
+    .timeline-item::after {
+        left: 21px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0%;
+    }
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.timeline-item {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+}
+
+.timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-item:nth-child(3) { animation-delay: 0.6s; }
+
+.portfolio {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    padding: 80px 20px;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #64ffda;
+}
+
+.portfolio .galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio .galeria .proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio .galeria .proyecto:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 25, 47, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio .galeria .proyecto:hover .overlay {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #64ffda;
+}
+
+.portfolio .galeria .proyecto .overlay .description {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #8892b0;
+}
+
+.portfolio .galeria .proyecto .overlay .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.portfolio .galeria .proyecto .overlay .technologies span {
+    background-color: #172a45;
+    color: #64ffda;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.portfolio .galeria .proyecto .overlay .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.portfolio .galeria .proyecto .overlay .btn {
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio .galeria .proyecto .overlay .btn.github {
+    background-color: #64ffda;
+    color: #0a192f;
+}
+
+.portfolio .galeria .proyecto .overlay .btn.youtube {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+.portfolio .galeria .proyecto .overlay .btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .portfolio .galeria {
+        grid-template-columns: repeat(1, 1fr); /* En móviles, 1 columna */
+    }
+}
+
+

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#educacion" onclick="seleccionar()">Educacion</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portafolio</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+<!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+    <video autoplay muted loop class="video-fondo">
+        <source src="img/22908-331768732_large.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <div class="contenido-banner">
+        <h1>Lautaro Julian Cenizo</h1>
+        <h2>Desarrollador full stack junior</h2>
+        <div class="redes">
+            <a href="https://github.com/1auti"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.youtube.com/watch?v=2NYHMKCFgcw&list=PLiQ9nC-YjzEZAyfaU0_o0HIF8pL7kUnlp"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/lautaro-cenizo/" class="margin-rigth"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+
+     <!-- SECCIÓN SCROLL -->
+ <section class="scroll-section">
+    <div class="scroll-content">
+          <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <p><span>Hola, soy Lautaro cenizo.</span> Estudiante entusiasta de 21 años en tercer año de la carrera de Licenciatura en Sistemas 24 materias cursadas, con una
+                pasion por la tecnologıa y la inform ́atica. Motivado por el desafıo de llevar mis habilidades teoricas y practicas al siguiente
+                nivel en un entorno laboral dińamico. Poseo un solido conocimiento en ́areas clave de la informatica y estoy ansioso por
+                contribuir al desarrollo y la innovacion en el campo de la tecnologıa. Dispuesto a aprender las tecnologıas necesarias para
+                el crecimiento profesional..</p>
+
+          
+                <button onclick="window.location.href='img/Lautaro-Cenizo-Developer.CV.pdf'" download="mi-cv">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+                
+        </div>
+    </section>
+
+<!-- SECCIÓN DE CONOCIMIENTOS -->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2 class="section-title">Mis Habilidades</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-card-back">
+                        <ul class="skill-list">
+                            <li>Java & Spring Boot</li>
+                            <li>JPA & Hibernate</li>
+                            <li>Microservicios</li>
+                            <li>Seguridad (OAuth2, JWT)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-card-back">
+                        <ul class="skill-list">
+                            <li>Angular</li>
+                            <li>HTML5 & CSS3</li>
+                            <li>TypeScript</li>
+                            <li>Bootstrap & Material UI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <h3>Herramientas & DevOps</h3>
+                    </div>
+                    <div class="skill-card-back">
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>CI/CD</li>
+                            <li>Postman</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-inner">
+                    <div class="skill-card-front">
+                        <h3>Habilidades Blandas</h3>
+                    </div>
+                    <div class="skill-card-back">
+                        <ul class="skill-list">
+                            <li>Comunicación efectiva</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Resolución de problemas</li>
+                            <li>Adaptabilidad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCION EDUCACIÓN -->
+<section id="educacion" class="education">
+    <div class="container">
+        <h2 class="section-title">Educación</h2>
+        <div class="timeline">
+            <!-- Educación Formal -->
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Estudios Secundarios en Ciencias Sociales</h3>
+                    <p class="timeline-institution">Instituto Santa Inés, Turdera</p>
+                    <p class="timeline-period">2015 - 2020</p>
+                    <p class="timeline-description">
+                        Formación en ciencias sociales con orientación en pensamiento crítico y análisis de la sociedad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Licenciatura en Sistemas</h3>
+                    <p class="timeline-institution">Universidad Nacional de Lanús (UNLA)</p>
+                    <p class="timeline-period">2020 - Presente</p>
+                    <p class="timeline-description">
+                        Enfoque en análisis de sistemas, programación, bases de datos y desarrollo de software.
+                    </p>
+                </div>
+            </div>
+
+           
+
+            <!-- Certificados -->
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Análisis de Grandes Volúmenes de Datos en Python</h3>
+                    <p class="timeline-institution">UNLA</p>
+                    <p class="timeline-period">2021</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Yo Programo</h3>
+                    <p class="timeline-institution">Argentina Programa</p>
+                    <p class="timeline-period">2022</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Se Programar</h3>
+                    <p class="timeline-institution">Argentina Programa</p>
+                    <p class="timeline-period">2023</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">JAVA - FRONT</h3>
+                    <p class="timeline-institution">Codo a Codo</p>
+                    <p class="timeline-period">2024</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Developer Salesforce</h3>
+                    <p class="timeline-institution">Talent Tech</p>
+                    <p class="timeline-period">2024</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3 class="timeline-title">Ethereum Developer</h3>
+                    <p class="timeline-institution">Talent Tech</p>
+                    <p class="timeline-period">2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2 class="section-title">Mi Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/airProyeectoPortada.jpg" alt="Airbnb clone">
+                    <div class="overlay">
+                        <h3>Airbnb Clone</h3>
+                        <p class="description">Una réplica funcional de Airbnb con características clave.</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>0Auth2</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/airbnb-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/airbnb-frontend" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=2NYHMKCFgcw" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ecomerce-microservices.portada.png" alt="E-commerce Microservices">
+                    <div class="overlay">
+                        <h3>E-commerce Microservices</h3>
+                        <p class="description">Plataforma de comercio electrónico basada en microservicios.</p>
+                        <div class="technologies">
+                            <span>Spring Boot</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Flyway</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/e-commerce-microservicies" class="btn github">GitHub</a>
+                            <a href="https://www.youtube.com/watch?v=2cYefzmBViM&t=1s" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/wppProyectoPortada.jpg" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>WhatsApp Clone</h3>
+                        <p class="description">Aplicación de mensajería en tiempo real inspirada en WhatsApp.</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>Keycloak</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/wpp-clone-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/wpp-clone-frontend" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=e2t6KKM77uc&t=2s" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/uplayPortada.png" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>U-PLAY</h3>
+                        <p class="description">Aplicación basada en Spring Boot que proporciona servicios para gestionar usuarios, preguntas, transacciones, y carteras de criptomonedas.</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>Postgres</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/u-play-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/u-play-frontend" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=gHHqXjiR2BQ" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="proyecto">
+                    <img src="img/spotifyPortada.jpg" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>Spotify Clone</h3>
+                        <p class="description">Una réplica funcional de Spotify con características clave.</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>0Auth2</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/spotify-clone-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/spotify-clone-frontend" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=20V-9EWoBNY" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="proyecto">
+                    <img src="img/portadaOrganizer.png" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>Organizer</h3>
+                        <p class="description">Una aplicacion que cumple la funciionalidad de un NOTAS</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>Postgres</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/organizer-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/organizer-frontend" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=yM9WaQsVmYQ&t=5s" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="proyecto">
+                    <img src="img/scarpingportada.png" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>Supermercado Scraping</h3>
+                        <p class="description">Aplicacion que recolecta la infomracion de los supermercados y muestra la infomracion</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>Seletuim</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/scraping-app-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/scraping-app-frontened" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=PO6FddNqgAM&t=4s" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="proyecto">
+                    <img src="img/odontologoPortada.png" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>Odontologia Web</h3>
+                        <p class="description">Sitio web especializado para odontologos</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>MySql</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/clinica-odontologica-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/clinica-odontologica-frontend" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=99-cWakzHxc" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="proyecto">
+                    <img src="img/nexflixPortada.jpg" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>Nexflix Clone</h3>
+                        <p class="description">Sitio web clonado de Nexflix, gracias a uso de APIS externas</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/nexflix-clone" class="btn github">GitHub</a>
+                            <a href="https://www.youtube.com/watch?v=HtarGPX3A4o" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto">
+                    <img src="img/wppPortada2.png" alt="WhatsApp Clone">
+                    <div class="overlay">
+                        <h3>WhatsApp Chat</h3>
+                        <p class="description">Implementacion del Web Socket para replicar la funcionalidad del WhatsApp</p>
+                        <div class="technologies">
+                            <span>Springboot</span>
+                            <span>Angular</span>
+                            <span>MySql</span>
+                        </div>
+                        <div class="buttons">
+                            <a href="https://github.com/1auti/chat-con-webSocket-backend" class="btn github">GitHub Backend</a>
+                            <a href="https://github.com/1auti/chat-con-webSocket-frontend" class="btn github">GitHub Frontend</a>
+                            <a href="https://www.youtube.com/watch?v=GKSAnsgKIRk" class="btn youtube">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            
+            </div>
+        </div>
+
+        
+
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
